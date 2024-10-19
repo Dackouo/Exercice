@@ -5,18 +5,28 @@
     margin: 0%;
     font-size: 20px;
     justify-content: center;
-    display: contents;
-   
+    align-items: center;
+    border:2px solid #333;
+    position: fixed;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    
 }
-#form h1 {
-    color: blue;
+input[type="text"] {
+    font-size: 15px;
+    font-family: "georgia";
+    width: 45%;
 }
-#name {
-    width: 20;
-    size: 20;
+input[type="password"]{
+    font-size: 15px;
+    font-family: "georgia";
+    width: 45%;
 }
-#p1 {
-    color: #29d9d5;
-    font-family: 'Lucida Sans';
-    font-size: 20px;
+input[type="submit"]{
+    font-size: 15px;
+    font-family: "georgia";
+    height: 40%;
+    color: white;
+    background-color: black;
 }
