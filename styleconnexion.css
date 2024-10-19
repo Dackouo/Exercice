@@ -1,0 +1,22 @@
+/*Connexion style CSS*/
+#form {
+    font-family: 'georgia';
+    padding: 0%;
+    margin: 0%;
+    font-size: 20px;
+    justify-content: center;
+    display: contents;
+   
+}
+#form h1 {
+    color: blue;
+}
+#name {
+    width: 20;
+    size: 20;
+}
+#p1 {
+    color: #29d9d5;
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+}

@@ -495,23 +495,3 @@ footer p span {
         }
     }
 }
-/*Connexion style CSS*/
-#form{
-    font-family: 'Lucida Sans';
-    font-size: 20px;
-    justify-content: center;
-    padding-left: 30%;
-    padding-top: 5%;
-}
-#form h1{
-    color: blue;
-}
-#name{
-    width: 20;
-    size: 20;
-}
-#p1{
-    color: #29d9d5;
-    font-family: 'Lucida Sans';
-        font-size: 20px;
-}
