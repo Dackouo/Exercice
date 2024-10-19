@@ -18,9 +18,7 @@ html {
 ::-webkit-scrollbar-thumb {
     background-color: #ccc;
 }
-body {
-    background-color: #111;
-}
+
 section {
     margin-top: 50px;
 }
@@ -496,4 +494,24 @@ footer p span {
             transform: translateY(100%);
         }
     }
-  }
+}
+/*Connexion style CSS*/
+#form{
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+    justify-content: center;
+    padding-left: 30%;
+    padding-top: 5%;
+}
+#form h1{
+    color: blue;
+}
+#name{
+    width: 20;
+    size: 20;
+}
+#p1{
+    color: #29d9d5;
+    font-family: 'Lucida Sans';
+        font-size: 20px;
+}
