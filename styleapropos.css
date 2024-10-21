@@ -258,9 +258,10 @@ main {
 }
 
 h1 {
-    color: white;
+    color: black;
     font-weight: bold;
-    margin-left: 25%;
+    margin-left: 45%;
+    margin-right: 25%;
 }
 
 label {
@@ -270,10 +271,34 @@ label {
 }
 
 form {
+    background-image: url(images/los-angeles.jpg);
+    color: white;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 30%;
+}
+
+.form1 {
     background-color: #111;
     color: white;
+    margin-right: 60%;
     margin-left: 35%;
-    margin-right: 50%;
-    margin-top: 15%;
+    margin-top: 1%;
+    width: 30%;
+}
+
+img {
+    width: 30%;
+    margin-left: 60%;
+    height: 100%;
+}
+
+.form2 {
+    background-color: #111;
+    color: white;
+    margin-right: 80%;
+    margin-left: 65%;
+    margin-top: 1%;
     width: 30%;
 }
