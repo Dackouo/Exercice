@@ -117,8 +117,8 @@ input {
     width: 60%;
     margin-left: 20%;
     justify-content: center;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 20px;
+    margin-top: 3px;
 }
 
 button {
@@ -126,8 +126,8 @@ button {
     width: 15%;
     margin-left: 40%;
     padding: 10px;
-    background-color: white;
-    color: black;
+    background-color: aqua;
+    color: white;
     border: none;
     cursor: pointer;
 }
@@ -149,7 +149,7 @@ form {
 }
 
 textarea {
-    margin-top: 1PX;
+    margin-top: 0PX;
     margin-left: 20%;
 }
 
