@@ -100,78 +100,37 @@ header .logo a span {
 h1 {
     color: white;
     font-weight: bold;
-    margin-left: 45%;
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-right: 35%;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(images/los-angeles.jpg);
-}
-
-label {
-    display: block;
-    margin-left: 20%;
-}
-
-input {
-    width: 60%;
-    margin-left: 20%;
-    justify-content: center;
-    padding: 8px;
-    margin-top: 5px;
-}
-
-button {
-    background-position: left;
-    width: 15%;
-    margin-left: 40%;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border: none;
-    cursor: pointer;
-}
-
-#message {
-    margin-left: 20%;
-    color: black;
+    text-align: center;
+    padding: 20px;
+    background-image: url(images/paris.jpg);
 }
 
 form {
+    margin-top: 20px;
+}
+
+input {
+    margin-left: 35%;
+    display: block;
+    margin-top: 10%;
+    margin-left: 250%;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 250%;
+    padding: 10px;
+    background-color: black;
     color: white;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 0%;
-}
-
-.message {
-    margin-left: 20%;
-}
-
-textarea {
-    margin-top: 1PX;
-    margin-left: 20%;
-}
-
-h3 {
-    margin-left: 20%;
-    margin-right: 20%;
-    justify-content: center;
-    padding: 8px;
-    margin-top: 0px;
-}
-
-h2 {
-    display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-content: center;
-    padding: 8px;
-    margin-top: 5px;
-}
-
-.label1 {
-    display: block;
-    margin-left: 0%;
-    margin-right: 0%;
+    border: none;
+    cursor: pointer;
 }
