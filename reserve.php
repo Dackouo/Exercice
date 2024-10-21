@@ -1,6 +1,8 @@
 
 
 <?php
+
+include 'dbreserve.php';
 $servername = "localhost";
 $username = "root"; // ou votre nom d'utilisateur
 $password = ""; // ou votre mot de passe
@@ -30,3 +32,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
+

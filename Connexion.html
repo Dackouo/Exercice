@@ -7,22 +7,23 @@
     <title>Air Travel</title>
 </head>
 <body>
-    <form action="" id="form">
+    <form method="post" enctype="multipart/form-data" id="formConnexion">
         <h1><u>Formulaire de connexion:</u></h1>
         <div>
             <p>Nom</p>
-            <input type="text", id="name", placeholder="Veuillez saisir votre nom">
+            <input type="text", id="name", placeholder="Veuillez saisir votre nom" required>
         </div><br>
         <div>
             <p>Prénom</p>
-            <input type="text", id="prenom", placeholder="Veuillez saisir votre prénom">
+            <input type="text", id="prenom", placeholder="Veuillez saisir votre prénom"required>
         </div><br>
         <div>
             <p>Mot de passe</p>
-            <input type="password", id="mdp", placeholder="Mot de passe">
+            <input type="password", id="mdp", placeholder="Mot de passe"required>
         </div> <br>
         <div>
-        <input type="submit", value="Envoyer", id="buttonEnv">
+        <input type="submit", value="Se connecter", id="buttonEnv"required>
     </form>
+    <div id="response"></div>
 </body>
 </html>
