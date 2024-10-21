@@ -250,12 +250,7 @@ header .logo a span {
 
 body {
     font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
+    background-image: url(images/rome.jpg);
 }
 
 main {
