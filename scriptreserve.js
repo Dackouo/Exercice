@@ -1,16 +1,20 @@
-document.getElementById('reservationForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Empêche le rechargement de la page
+document.getElementById('reservation-form').addEventListener('submit', function(e) {
+    e.preventDefault();
 
     const formData = new FormData(this);
 
-    fetch('submit.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('message').innerText = data;
-        this.reset(); // Réinitialise le formulaire
-    })
-    .catch(error => console.error('Erreur:', error));
+    fetch('dbreserve.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Réservation réussie !');
+                this.reset();
+            } else {
+                alert('Erreur : ' + data.message);
+            }
+        })
+        .catch(error => console.error('Error:', error));
 });
