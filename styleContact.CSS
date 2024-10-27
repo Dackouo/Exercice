@@ -532,6 +532,8 @@ button {
     margin-top: 20px;
     color: black;
 }
+
+
 *{
     margin:0px;
     padding: 0px;
@@ -554,12 +556,9 @@ button {
     text-align: left;
 
 }
-.contact-form h3{
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
+
    
-}
+
 .form-group{
     margin-bottom: 30px;
 
@@ -593,11 +592,11 @@ button:hover{
 }
 .contact-info h3{
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
     color: #333;
 }
 .contact-info p{
-margin-bottom: 10px;
+margin-bottom: 9px;
 color: #555;
 }
 .contact-info i{
@@ -611,6 +610,4 @@ color: #555;
     .contact-wrapper{
         grid-template-columns: repeat( 1fr);
     }
-}
-    
 }
