@@ -1,9 +1,11 @@
 <?php 
 include('database.php');
 $nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
+
 $email = $_POST['mail'];
-$requete = $bdb->exec("INSERT into inscription(nom, prenom,) values ('$nom','$prenom','$mail')");
+$message= $_POST['message'];
+$envoie= $_POST['envoie'];
+$requete = $bdb->exec("INSERT into inscription(nom,mail, message,envoie) values ('$nom','$message','$mail','$envoie')");
 
 if ($requete == true) {
     echo "insertion effectuée avec succès";
