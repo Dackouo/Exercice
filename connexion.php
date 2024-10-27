@@ -1,17 +1,37 @@
 <?php
-include('database.php');
-//Vérifier si le formulaire est soumis
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nom = $_POST['nom'];
-    $prenom = $_POST['prenom'];
-    $motdepasse = $_POST['mdp'];
+include('dbConnexion.php'); // Assurez-vous que ce fichier établit la connexion
 
-    $requete = $bdb->exec("INSERT into connexion(nom, prenom, motdepasse) values ('$nom','$prenom','$mdp')");
-    //Affichage d'un message de succès ou d'échec
-    if ($requete == true) {
-        echo "insertion effectuée avec succès";
+// Activer l'affichage des erreurs pour le débogage
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Vérifier si le formulaire est soumis
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $nom = isset($_POST['nom']) ? $_POST['nom'] : '';
+    $prenom = isset($_POST['prenom']) ? $_POST['prenom'] : '';
+    $motdepasse = isset($_POST['mdp']) ? $_POST['mdp'] : '';
+
+    // Affichage de test (à retirer en production)
+    echo "Nom : $nom, Prénom : $prenom, Mot de passe : $motdepasse <br>";
+
+    // Préparer la requête d'insertion
+    if (isset($bdb)) { // Vérifie que $bdb est défini
+        $requete = $bdb->prepare("INSERT INTO connexion (nom, prenom, motdepasse) VALUES (?, ?, ?)");
+
+        // Exécuter la requête et gérer le succès ou l'échec
+        if ($requete->execute([$nom, $prenom, $motdepasse])) {
+            // Redirection vers la page d'accueil après une insertion réussie
+            header("Location: index.html");
+            exit();
+        } else {
+            // Afficher l'erreur en cas d'échec d'insertion
+            echo "Erreur SQL : ";
+        }
+    } else {
+        echo "Erreur de connexion à la base de données.";
     }
-}else{
-    echo "insertion echouée";
+} else {
+    echo "Formulaire non soumis.";
 }
  ?>

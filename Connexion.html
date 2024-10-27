@@ -7,23 +7,25 @@
     <title>Air Travel</title>
 </head>
 <body>
-    <form action="connexion.php" method="post" enctype="multipart/form-data" id="formConnexion">
+    <form action="connexion.php" method="POST" enctype="multipart/form-data" id="formConnexion">
         <h1><u>Formulaire de connexion:</u></h1>
         <div>
             <p>Nom</p>
-            <input type="text", id="name", placeholder="Veuillez saisir votre nom" required>
+            <input type="text", id="nom", name="nom" placeholder="Veuillez saisir votre nom" required>
         </div><br>
         <div>
             <p>Prénom</p>
-            <input type="text", id="prenom", placeholder="Veuillez saisir votre prénom"required>
+            <input type="text", id="prenom", prenom="prenom" placeholder="Veuillez saisir votre prénom"required>
         </div><br>
         <div>
             <p>Mot de passe</p>
-            <input type="password", id="mdp", placeholder="Mot de passe"required>
+            <input type="password", id="mdp", name="mdp" placeholder="Mot de passe"required>
         </div> <br>
         <div>
         <input type="submit", value="Se connecter", id="buttonEnv"required>
     </form>
-    <div id="response"></div>
+    <script src="scriptconnexion.js"></script>
+    <div id="notification" style="display: none;"></div>
+
 </body>
 </html>
