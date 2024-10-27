@@ -1,5 +1,3 @@
-
-
 <?php
 
 include 'dbreserve.php';
@@ -24,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $sql = "INSERT INTO reservation (Nom, Email, Destination, Date_reservation, Temp) VALUES ('$name', '$email', '$destination', '$date', '$time')";
     if ($conn->query($sql) === TRUE) {
-        echo "Réservation réussie!";
+        echo "Connexion réussie!";
     } else {
         echo "Erreur: " . $sql . "<br>" . $conn->error;
     }

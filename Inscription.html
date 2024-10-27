@@ -7,29 +7,29 @@
     <title>Air Travel</title>
 </head>
 <body>
-    <form action="inscription.php" id="formInscription">
+    <form action="inscription.php" id="formInscription" method="POST">
         <h1><u>Formulaire d'inscription:</u></h1>
         <div>
             <p>Nom</p>
-            <input type="text" , id="name" , placeholder="Veuillez saisir votre nom"required>
+            <input type="text" , id="nom" , name="nom", placeholder="Veuillez saisir votre nom"required>
         </div><br>
         <div>
             <p>Prénom</p>
-            <input type="text" , id="prenom" , placeholder="Veuillez saisir votre prénom"required>
+            <input type="text" , id="prenom" , name="prenom", placeholder="Veuillez saisir votre prénom"required>
         </div><br>
         <div>
             <p>Mot de passe</p>
-            <input type="password" , id="mdp" , placeholder="Mot de passe"required>
+            <input type="password" , id="mdp" , name="mdp" placeholder="Mot de passe"required>
         </div> <br>
         <div>
             <div>
                 <p>Confirmer mot de passe</p>
-                <input type="password" , id="mdpconf" , placeholder="confirmer votre mot de passe"required>
+                <input type="password" , id="mdpconf" , name="mdpconf" placeholder="confirmer votre mot de passe"required>
             </div> <br>
             <div>
                 <input type="submit" , value="S'inscrire" , id="buttonEnv">     
     </form>
-    <div id="response"></div>
-    <h1>Salut</h1>
+    <script src="scriptinscription.js"></script> 
+    <div id="notification"></div>
 </body>
 </html>
