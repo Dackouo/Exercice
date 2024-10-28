@@ -498,9 +498,6 @@ footer p span {
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #111;
-}
-
 label {
     display: block;
     margin-top: 10px;
@@ -528,4 +525,5 @@ button {
 #message {
     margin-top: 20px;
     color: black;
+}
 }
