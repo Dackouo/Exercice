@@ -1,0 +1,46 @@
+/*Connexion style CSS*/
+
+body {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(images/img2.jpg);
+}
+
+#formInscription {
+    font-family: 'georgia';
+    padding: 0%;
+    margin: 0%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #FFFFE0;
+    position: absolute;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #FFFFE0;
+    transform: translate(-50%, -50%);
+}
+
+input[type="text"] {
+    font-size: 15px;
+    font-family: "georgia";
+    width: 45%;
+}
+
+input[type="password"] {
+    font-size: 15px;
+    font-family: "georgia";
+    width: 45%;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+    font-family: "georgia";
+    height: 40%;
+    color: white;
+    background-color: black;
+}

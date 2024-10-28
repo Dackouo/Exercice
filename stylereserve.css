@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+body {
+    background-color: #111;
+}
+
+section {
+    margin-top: 50px;
+}
+
+header {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+
+header .logo a {
+    font-size: 25px;
+    color: #29d9d5;
+}
+
+header .logo a span {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn-reservation {
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+.btn-reservation:hover {
+    background-color: #29d9d5;
+    color: #fff;
+}
+
+.btn-contacter {
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+.btn-contacter:hover {
+    background-color: #29d9d5;
+    color: #fff;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    margin-left: 45%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/los-angeles.jpg);
+}
+
+label {
+    display: block;
+    margin-left: 20%;
+}
+
+input {
+    width: 60%;
+    margin-left: 20%;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 3px;
+}
+
+button {
+    background-position: left;
+    width: 15%;
+    margin-left: 40%;
+    padding: 10px;
+    background-color: aqua;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#message {
+    margin-left: 20%;
+    color: black;
+}
+
+form {
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0%;
+}
+
+.message {
+    margin-left: 20%;
+}
+
+textarea {
+    margin-top: 0PX;
+    margin-left: 20%;
+}
+
+h3 {
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 0px;
+}
+
+h2 {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.label1 {
+    display: block;
+    margin-left: 0%;
+    margin-right: 0%;
+}

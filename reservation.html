@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylereserve.css">
     <title>Air Travel</title>
 </head>
+
 <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Réservation</h1>
+    <form action="reserve.php" method="post">
+        <br>
+        <label for="nom">Nom:</label>
+        <input type="text" name="name" placeholder="Votre nom">
+        <label for="nom">Email:</label>
+        <input type="email" name="email" placeholder="Votre email">
+        <label for="nom">Destination:</label>
+        <input type="text" name="destination" placeholder="Votre destination">
+        <label for="nom">La Date:</label>
+        <input type="date" name="date">
+        <label for="nom">Heure:</label>
+        <input type="time" name="time">
+
+        <br>
+        <p>
+            <h3>Votre message:</h3>
+            <br>
+            <textarea name="le message" rows="7" cols="65"> Veuillez saisir votre message
+    
+                </textarea>
+        </p>
+        <br>
+
+        <button type="submit">Réserver</button></a>
+        <br>
+        <br>
+    </form>
+
+    <div id="message"></div>
+    <script src="scriptreserve.js"></script>
     <header>
         <div class="logo">
             <a href="index.html"> <span>Air</span> Travel</a>
@@ -18,11 +56,12 @@
             <li><a href="Contact.html">contact</a></li>
         </ul>
         <div>
-            <a href="#" class="btn-contacter">se connecter</a>
-            <a href="#" class="btn-reservation">s'inscrire</a>
+            <a href="Connexion.html" class="btn-contacter">se connecter</a>
+            <a href="Inscription.html" class="btn-reservation">s'inscrire</a>
         </div>
         <div class="responsive-menu"></div>
     </header>
-    
+
 </body>
+
 </html>
