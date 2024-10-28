@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+    background-color: bisque;
+    padding: 0 2%;
+    margin: 0%;
+    font-family: 'Noto Sans Mono' sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+nav .profile {
+display: flex;
+align-items: center;
+}
+nav .profile img {
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+}
+nav .profile h2 {
+    margin-left:15px;
+    font-size: 15px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+nav ul li:hover {
+    border-bottom-color: #000;
+}
+.section {
+    margin: 4%;
+}
+.section header {
+    margin-top: 5%;
+    max-width: 80%;
+}
+.section header h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section header p {
+line-height: 30px;
+color: #818181;
+}
+.section header button{
+    background-color: inherit;
+    border : none;
+    outline: none;
+    padding-left: 0;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.section header button:hover {
+    color: #ccc;
+    border-bottom-color: #000;
+}
+.section .image {
+    margin-top: 5%;
+}
+.section .image img {
+    max-width: 100%;
+}
+.section .projet {
+    margin-top: 6%;
+}
+.section .projet h1 {
+    font-family: 'Oswald', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+.section .projet .projets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.section .projet .projets .projett {
+    margin-right: 20px;
+    max-width: 195px;
+}
+.section .projet .projets .projett h3 {
+    margin: 0;
+}
+.section .projet .projets .projett .description {
+font-size: 14px;
+}
+.section .projet .projets .projett .dates {
+    font-size: 14px;
+    color: rosybrown;
+}
+footer {
+margin-top: 5%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+background-color: #818181;
+}
+footer .colonne p {
+    font-size: 12px;
+    color: aquamarine;
+    cursor: pointer;
+}
+footer .colonne p:hover {
+color: #fff;
+}
+@media screen and (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+    }
+    .section header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+    .section .projet {
+        margin-top: 15%;
+    }
+    .section .projet h1 {
+        font-size: 1.5em;
+    }
+    .section .projet .projets .projett {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}
